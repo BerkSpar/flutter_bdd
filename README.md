@@ -22,10 +22,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [F
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/BerkSpar/octocoin
+$ git clone https://github.com/BerkSpar/flutter_bdd
 
 # Go into the flutter project
-$ cd octocoin
+$ cd flutter_bdd
 
 # Get dependencies
 $ flutter pub get
@@ -39,7 +39,7 @@ To run tests of this application, you'll need [Node](https://nodejs.org/en) inst
 
 ```bash
 # Go into the flutter project
-$ cd octocoin
+$ cd flutter_bdd
 
 # Get dependencies
 $ flutter pub get
