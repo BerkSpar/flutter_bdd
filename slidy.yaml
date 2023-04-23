@@ -1,0 +1,26 @@
+slidy: '1'
+
+scripts:
+  clean: flutter pub run build_runner clean
+
+  build: flutter pub run build_runner build
+
+  bdd:
+    description: "Run all integration tests"
+    steps:
+      - name: "Clean"
+        run: flutter pub run build_runner clean
+        
+      - name: "Build"
+        description: "Build all generated packages"
+        run: flutter pub run build_runner build --delete-conflicting-outputs
+
+      - name: "Test"
+        description: "Run all integrated tests"
+        run: flutter drive --driver=test_driver/integration_test_driver.dart --target=integration_test/gherkin_suite_test.dart
+
+      - name: "Report"
+        description: "Show report in the browser"
+        run: node gherkin.js
+        
+  build_delete: flutter pub run build_runner build --delete-conflicting-outputs
