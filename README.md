@@ -1,6 +1,6 @@
 # Flutter BDD
 
-An proof of concept to implement flutter_gherkin using BDD tests.
+An proof of concept to implement [flutter_gherkin](https://pub.dev/packages/flutter_gherkin) using BDD tests.
 
 ## Table of Contents
 
